@@ -1,0 +1,21 @@
+Hello! Today is October and me and my wife going to walk to a shop at 8 o'clock at evening. We're going to buy some sweet things and water.
+
+I'm not sure, I'm just talking and I'm testing my experience in English language. I'm going to speak with you to collect a count of words that I know. After the walking, we will back home to play in Minecraft with our kids. 
+
+Thank you. However, tomorrow I will go not with family, but with my friends from Internet. I will make a trip for second time with them, and I hope it will be not so difficult and not so complex that the previous one, because I have trained myself every day, and I'm making me upstairs to the 14th floor every day.
+
+Thank you, I hope it will be fine tomorrow. But today we're going to back home and play in Minecraft with our kids, as I said before. And therefore I'm going to ask you, do you know how can I find a castle in the Nether?
+
+Thank you. As far as I understand, Fortress Bridges always contains lava under the bridge. Is it true?
+
+Well, it sounds like great news, because I can find a fortress by finding big lava lakes.
+
+Sure. In addition, I'm going to tell you about my exam that I will have in a month. It is a PriceTown PTE exam. I will provide my English knowledge. I will test my English knowledge that will be used in my further work. 
+
+There exists one thing that I'm afraid for. A couple of months ago I arrived to this place where the examples will be, and I haven't found a center or a kind of house or building that can contain the test center. And nobody knows where this center exists. Then I hope it will be open at one time per year, per month, because some works only one time per month. And in addition, I think it's maybe in a depth between buildings. Maybe I didn't find it because I watched only the buildings that faced to the street.
+
+Thank you. A couple of days ago I figured out that I can't handle my issue, my psychological issue about my job. Early I'm frustrated about my work because I didn't... I realized that I didn't... cannot complete my job in a deadline. And it made me frustrated and didn't give me to work better. I just didn't... anything. I just played or watched videos or watched... reading... doomscrolling. But now I find a way to handle it. I just give myself a right to miss my deadlines. And when I know that I can miss my deadlines, I can work with effective and with pleasure.
+
+Thank you. I'm going to tell you about my idea that I'm going to make in my profile, portfolio, I mean. The idea is creating a project that will collect data from several sources, several chats, several groups. I'm splitting these groups by two categories. First is anti-war, and second is pro-war. And I'm going to analyze the posts from these groups and from comments from these groups. And I'm going to automatically try to make a clusterization of this data to obtain the two clusters, who is on one side and who is on the other side. I'm interested in machine learning and can clusterizations of embeddings split this strictly to a couple of clusters.
+
+Suppose that we have several approaches to make clusterization, and one approach will give more concrete clusters, and the second approach may give less concrete clusters. Is there any metric that can evaluate the concretization of clusters?
