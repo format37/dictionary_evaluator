@@ -165,6 +165,10 @@ def frequency():
     # Save DataFrame to CSV
     df.to_csv('data/output/word_frequency_table.csv', index=False)
 
+    # Save all user's text in a single file
+    with open('data/output/user_text.txt', 'w') as f:
+        f.write(user_text)
+
     plot_word_frequency_modified(df)
 
     # Print the number of words that persist in the user's text    
@@ -193,10 +197,59 @@ def frequency():
         for word in df[df['Assistant_Frequency'] > 0].sort_values(by='Assistant_Frequency', ascending=False)['Word'].tolist():
             f.write(word + '\n')
 
+def comparison():
+    records_count_limit = 20
+
+    # Load the CSV file into a DataFrame
+    file_path = 'data/output/word_frequency_table.csv'  # Replace with your file path
+    df = pd.read_csv(file_path)
+
+    # Sort the data by Assistant_Frequency and User_Frequency
+    df_sorted_by_assistant = df.sort_values(by='Assistant_Frequency', ascending=True).tail(records_count_limit)
+    df_sorted_by_user = df.sort_values(by='User_Frequency', ascending=True).tail(records_count_limit)
+
+    # Create a figure and a 1x2 grid of subplots
+    fig, axs = plt.subplots(1, 2, figsize=(15, 10))
+
+    # Pastel Green: RGB (152, 251, 152) or HEX #98FB98
+    pastel_green = '#98FB98'
+    # Pastel Brown: RGB (215, 196, 153) or HEX #D7C499
+    pastel_brown = '#D7C499'
+    # Pastel Blue: RGB (173, 216, 230) or HEX #ADD8E6
+    pastel_blue = '#ADD8E6'
+    # Pastel Orange: RGB (255, 179, 71) or HEX #FFB347
+    pastel_orange = '#FFB347'
+    # Pastel Magenta: RGB (255, 105, 180) or HEX #FF69B4
+    pastel_magenta = '#FF69B4'
+
+
+    # Plot sorted by Assistant_Frequency
+    axs[0].barh(df_sorted_by_assistant['Word'], df_sorted_by_assistant['Assistant_Frequency'], color=pastel_blue, label='Assistant')
+    axs[0].barh(df_sorted_by_assistant['Word'], -df_sorted_by_assistant['User_Frequency'], color=pastel_brown, label='User')
+    axs[0].set_title('Sorted by Assistant Frequency')
+    axs[0].set_xlabel('Frequency')
+    axs[0].set_ylabel('Word')
+    axs[0].legend()
+
+    # Plot sorted by User_Frequency
+    axs[1].barh(df_sorted_by_user['Word'], df_sorted_by_user['Assistant_Frequency'], color=pastel_blue, label='Assistant')
+    axs[1].barh(df_sorted_by_user['Word'], -df_sorted_by_user['User_Frequency'], color=pastel_brown, label='User')
+    axs[1].set_title('Sorted by User Frequency')
+    axs[1].set_xlabel('Frequency')
+    axs[1].set_ylabel('Word')
+    axs[1].legend()
+
+    # Show the plots
+    # plt.tight_layout()
+    # plt.show()
+    # Save
+    plt.savefig('data/output/comparison.png')
+
 
 def main():
     frequency()
-    progress()
+    # progress()
+    comparison()
 
 
 if __name__ == '__main__':
